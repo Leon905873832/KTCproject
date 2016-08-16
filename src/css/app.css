@@ -1,0 +1,444 @@
+html {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a, button, input, textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.page {
+    display: block;
+    -webkit-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.page.active {
+    -webkit-transform: translate3d(14em, 0, 0);
+    -ms-transform: translate3d(14em, 0, 0);
+    transform: translate3d(14em, 0, 0);
+}
+
+.bar-nav {
+    background-color: #0894ec;
+    color: #fff;
+    z-index: 105;
+}
+.bar-nav .title, .bar-nav a {
+    color: #fff;
+}
+.bar-nav .title, .bar-nav button {
+    color: #fff;
+    border-color: #fff;
+}
+.bar-nav-operate {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    list-style: none;
+    background-color: rgba(0,0,0,0.8);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.bar-nav-operate li {
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.bar-nav-operate li:last-child {
+    border: none;
+}
+.my-home {
+    padding: 0;
+}
+.my-home .iconfont {
+    font-size: 2.3rem;
+    line-height: 1;
+    color: #0894ec;
+}
+.my-home li {
+    list-style: none;
+    text-align: center;
+}
+.my-home li > div {
+    height: 3rem;
+    line-height: 3rem;
+}
+.my-home li:nth-child(1) .iconfont {
+    margin-top: 0.6rem;
+}
+.my-home li:nth-child(2) .iconfont {
+    font-size: 2.8rem;
+    color: #4cd964;
+}
+
+.my-home li:nth-child(3) .iconfont {
+    font-size: 2.5rem;
+    color: #f60;
+}
+.my-home li:nth-child(4) .iconfont {
+    font-size: 2.6rem;
+    color: #4cd964;
+}
+.my-home li:nth-child(5) .iconfont {
+    font-size: 2.5rem;
+    color: #f60;
+}
+.my-home li:nth-child(6) .iconfont {
+    font-size: 2.5rem;
+}
+.my-home .badge {
+    margin-left: 5px;
+    color: #fff;
+    background-color: #f6383a;
+}
+
+.appr i {
+    font-size: 1.25rem;
+}
+
+.card-footer.no-padding {
+    padding: 0;
+}
+
+.card-footer .list-block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.no-icon-list .item-content {
+    padding-left: 0;
+}
+
+.no-icon-list .item-inner {
+    padding-left: .75rem;
+}
+
+.card-footer .item-content {
+    font-size: .6rem;
+}
+
+.card-footer .iconfont {
+    font-size: 1.1rem;
+}
+
+.add-invoce i {
+    font-size: 4.2rem;
+    color: #c9c9ce;
+}
+
+.bar-tab .button {
+    top: 0;
+    border-radius: 0;
+}
+
+.bar-header-secondary p {
+    margin: .6em 0;
+}
+
+.content-padded ~ .list-block {
+    margin-top: 0;
+}
+
+.loading, .tips-box {
+    position: absolute;
+    z-index: 2500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.loading img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    margin: auto;
+}
+.add-invoice i {
+    font-size: 4.2rem;
+    color: #c9c9ce;
+}
+
+.add-btn {
+    position: relative;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 100%;
+    border: 2px solid #ff6600;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 1.3rem;
+    font-size: 1.6rem;
+    color: #ff6600;
+    overflow: hidden;
+}
+
+#add-btn-file {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    font-size: 30px; 
+    padding: 0.5em 0; 
+    opacity: 0; 
+}
+
+.breviary-img img {
+    margin: 0 3px;
+}
+
+.img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.img-bar img {
+    display: block;
+    width: 100%;
+}
+
+.img-bar a {
+    position: absolute;
+    right: -0.5rem;
+    top: -0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    color: red;
+    background-color: #fff;
+}
+
+.img-bg .button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.item-after input.itemEdit {
+    width: 7rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    border-radius: 3px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.option-header {
+    position: relative;
+    background-color: #0894ec;
+    color: #fff;
+    height: 2.2rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    overflow: hidden;
+}
+.option-header h2 {
+    float: left;
+    font-size: .85rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+    margin: 0;
+}
+.option-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 2000;
+}
+.option-list {
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.close {
+    float: right;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #fff;
+}
+
+.list-block .invoce-remark {
+    width: 85%;
+}
+
+.option-box ul {
+    list-style: none;
+}
+.item-inner.flex-start {
+    align-items: flex-start;
+}
+.button-affix {
+    width: 1.4rem;
+    font-size: 1.25rem;
+    padding: 0;
+    float: right;
+}
+
+.slideRight-transition {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+
+.slideRight-enter {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+}
+
+.slideRight-leave {
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+}
+.list-block ul:empty:before, .list-block ul:empty:after {
+    background-color: transparent;
+}
+
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideOutRight {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.list-block .item-after {
+    max-width: 85%;
+    overflow: hidden;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.project-list .card:first-of-type {
+    margin-top: 2em;
+}
+.modal.modal-show {
+    display: block;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+
+@font-face {font-family: "webOA";
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"webOA"!important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-fanhui:before { content: "\e600"; }
+.icon-caidan:before { content: "\e605"; }
+.icon-shoupiaoguanli:before { content: "\e609"; }
+.icon-xiao02:before { content: "\e60d"; }
+.icon-xinjianfacheqingdan:before { content: "\e607"; }
+.icon-yonghuming:before { content: "\e601"; }
+.icon-wancheng:before { content: "\e615"; }
+.icon-zhuye:before { content: "\e602"; }
+.icon-icon5:before { content: "\e60f"; }
+.icon-weituoguanli:before { content: "\e608"; }
+.icon-quxiao:before { content: "\e616"; }
+.icon-daichuliyuyue:before { content: "\e617"; }
+.icon-jizhumima:before { content: "\e603"; }
+.icon-mima:before { content: "\e604"; }
+.icon-gongsibiaozhi:before { content: "\e618"; }
+.icon-hetongguanli:before { content: "\e60a"; }
+.icon-baoxiao:before { content: "\e606"; }
+.icon-project:before { content: "\e60b"; }

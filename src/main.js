@@ -1,0 +1,10 @@
+require('./css/sm.min.css');
+require('./css/app.css');
+require('./css/mobiscroll-2.13.min.css');
+$ = jQuery = window.jQuery = require('jquery');
+var Vue = require('vue');
+var App = require('./App.vue');
+var http = require('vue-resource');
+Vue.use(http);
+var router = require('./js/router.js');
+router.start(App, 'app');
